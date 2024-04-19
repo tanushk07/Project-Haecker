@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kisan Kart</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
   </head>
   <body>
     <div class="navbar border">
@@ -12,16 +16,56 @@
       <div class="navcontent">
         <div class="uppercontent border">
           <div class="location size1 border">
-            <div class="loclogo"></div>
-            <div id="currentLocation" style="font-size: larger">
-              CurrentLocation
+            <div class="loclogo border">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="currentlocation">
+              <div id="currentLocationtext" style="font-size: 3vh">
+                CurrentLocation
+              </div>
+              <div class="currentlocationlive" style="font-size: 2vh">abcd</div>
             </div>
           </div>
           <div class="searchbar border">
             <input type="text" placeholder="Search..." id="searchInput" />
             <button class="searchbutton">
-              <span><i class="fa-solid fa-magnifying-glass"></i></span>
+              <i class="fa-solid fa-magnifying-glass"></i>
             </button>
+          </div>
+          <div class="cart border size2">
+            <div class="cartlogo border">
+              <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+            <a href=""><div class="carttext border">Cart</div></a>
+          </div>
+          <div class="login size2 border">
+            <a href=""
+              ><div class="loginupper border">
+                <div class="userlogo">
+                  <i class="fa-solid fa-user" style="font-size: 4vh"></i>
+                </div>
+                <div class="username border"><p>Login</p></div>
+              </div></a
+            >
+            <div class="loginbottom">
+              <select
+                name="user"
+                id=""
+                style="
+                  border: none;
+                  text-decoration: none;
+                  background-color: lightgreen;
+                "
+                ;
+              ></select>
+            </div>
+          </div>
+          <div class="joinasseller size3 border">
+            <a href=""
+              ><div class="shoplogo border">
+                <i class="fa-solid fa-shop" style="font-size: 4vh"></i></div
+            ></a>
+            <a href=""><div class="sellertext border">Join as Seller</div></a>
           </div>
         </div>
         <div class="lowercontent border"></div>
