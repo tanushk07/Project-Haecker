@@ -1,0 +1,72 @@
+* {
+  margin: 0px;
+}
+html {
+  height: 100%;
+  width: 100%;
+}
+.navbar {
+  width: 100%;
+  height: 20vh;
+  background-color: lightgreen;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 1vh;
+}
+.border {
+  border: 2px solid black;
+}
+.kklogo {
+  height: 18vh;
+  width: 18vh;
+  background-size: cover;
+  background-image: url("KISAN_KART.png");
+}
+.uppercontent {
+  width: 100%;
+  height: 70%;
+  box-sizing: border-box;
+  padding: 1vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.lowercontent {
+  width: 100%;
+  height: 30%;
+  box-sizing: border-box;
+}
+.navcontent {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 1vh;
+}
+.size1 {
+  width: 25vh;
+  height: 100%;
+}
+.searchbar {
+  width: 90vh;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+}
+#searchInput {
+  width: 90%;
+  height: 100%;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.fa-magnifying-glass {
+  font-size: 100px;
+}
+.searchbutton {
+  width: 8vh;
+  height: calc(100% + 0.75vh);
+  border-radius: 0;
+  background-color: white;
+}
