@@ -37,7 +37,7 @@ body {
 .lowercontent {
   height: 30%;
   display: flex;
-  justify-content: space-evenly;
+
   align-items: center;
   box-sizing: border-box;
   background-color: rgba(91, 167, 91, 0.747);
@@ -154,10 +154,10 @@ a {
   align-items: center;
   height: 70%;
   width: 7vw;
-  border: 1px solid black;
   border-radius: 100px;
   font-size: 2.3vh;
   font-weight: 500;
+  margin: 2vw;
 }
 .midpage {
   margin: 1.3vh;
@@ -210,7 +210,7 @@ a {
 }
 .seedbox,
 .protectionbox {
-  width: 32vh;
+  width: 16vw;
   height: 35vh;
   display: flex;
   flex-direction: column;
@@ -219,13 +219,17 @@ a {
   border: 0.5px solid rgb(185, 179, 179);
 }
 .seedimages {
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
   background-image: url(seedsimage.jpg);
   height: 85%;
   box-sizing: border-box;
 }
 .protectionimages {
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   background-image: url(pesticidesimage.jpg);
   height: 85%;
   box-sizing: border-box;
