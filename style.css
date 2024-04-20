@@ -1,9 +1,8 @@
 * {
   margin: 0px;
 }
-html {
-  height: 100%;
-  width: 100%;
+body {
+  background-color: rgb(236, 228, 228);
 }
 .navbar {
   width: 100%;
@@ -16,7 +15,7 @@ html {
   padding-top: 0;
   padding-bottom: 0;
 }
-.borde {
+.borer {
   border: 2px solid black;
 }
 .kklogo {
@@ -26,7 +25,7 @@ html {
   background-image: url("KISAN_KART.png");
 }
 .uppercontent {
-  width: 100%;
+  width: auto;
   height: 70%;
   box-sizing: border-box;
   padding: 1vh;
@@ -36,7 +35,7 @@ html {
   align-items: center;
 }
 .lowercontent {
-  width: 100%;
+  width: auto;
   height: 30%;
   display: flex;
   justify-content: space-evenly;
@@ -50,7 +49,6 @@ html {
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin: 1vh;
 }
 .size1 {
   width: 25vh;
@@ -84,7 +82,7 @@ html {
 }
 .searchbutton {
   width: 8vh;
-  height: calc(100% + 0.25vh);
+  height: 5.3vh;
   border-radius: 0;
   background-color: white;
   border-bottom-right-radius: 100px;
@@ -161,4 +159,67 @@ a {
   border-radius: 100px;
   font-size: 2.3vh;
   font-weight: 500;
+}
+.midpage {
+  margin: 1.3vh;
+}
+.banner {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  background-image: url("Website-Banner-.png");
+  background-size: cover;
+  justify-content: space-between;
+}
+.change_banner {
+  background-color: white;
+  border: 0;
+  position: relative;
+  height: 15vh;
+  width: 5vh;
+}
+.size4 {
+  height: 42vh;
+  margin-bottom: 2vh;
+}
+
+.previous_banner {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.next_banner {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.bestseeds_section {
+  background-color: whitesmoke;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* padding-top: 1vh;
+  padding-bottom: 2vh; */
+}
+.seedboxes {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.seedbox {
+  width: 32vh;
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 1vh;
+  border: 0.5px solid black;
+}
+.seedimages {
+  background-size: cover;
+  background-image: url(seedsimage.jpg);
+  height: 85%;
+}
+.seedstext {
+  font-size: larger;
+  text-align: center;
 }
