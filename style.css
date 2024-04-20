@@ -191,7 +191,8 @@ a {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
-.bestseeds_section {
+.bestseeds_section,
+.protection_section {
   background-color: whitesmoke;
   box-sizing: border-box;
   display: flex;
@@ -199,27 +200,40 @@ a {
   justify-content: space-evenly;
   /* padding-top: 1vh;
   padding-bottom: 2vh; */
+  padding-top: 5vh;
 }
-.seedboxes {
+.seedboxes,
+.protectionboxes {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  padding-top: 3vh;
 }
-.seedbox {
+.seedbox,
+.protectionbox {
   width: 32vh;
   height: 35vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin-bottom: 1vh;
-  border: 0.5px solid black;
+  border: 0.5px solid rgb(185, 179, 179);
 }
 .seedimages {
   background-size: cover;
   background-image: url(seedsimage.jpg);
   height: 85%;
+  box-sizing: border-box;
 }
-.seedstext {
+.protectionimages {
+  background-size: cover;
+  background-image: url(pesticidesimage.jpg);
+  height: 85%;
+  box-sizing: border-box;
+  padding: 2vh;
+}
+.seedstext,
+.protectiontext {
   font-size: larger;
   text-align: center;
 }
