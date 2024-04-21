@@ -96,13 +96,13 @@ prevseedbutton.addEventListener("click", () => {
   }
 });
 //////////////////////////////////////////////////
-protectionboxes.forEach((element) => {
-  element.addEventListener("mouseenter", () => {
-    element.style.transform = "";
-    element.classList.add("hover");
-  });
-  element.addEventListener("mouseleave", () => {
-    element.style.transform = "";
-    element.classList.remove("hover");
-  });
-});
+// protectionboxes.forEach((element) => {
+//   element.addEventListener("mouseenter", () => {
+//     element.style.transform = "";
+//     element.classList.add("hover");
+//   });
+//   element.addEventListener("mouseleave", () => {
+//     element.style.transform = "";
+//     element.classList.remove("hover");
+//   });
+// });
