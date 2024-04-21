@@ -236,6 +236,7 @@ a {
   /* flex-wrap: wrap; */
   padding-top: 3vh;
   align-items: center;
+  overflow: hidden;
 }
 .seedbox,
 .protectionbox {

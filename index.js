@@ -30,37 +30,79 @@ prevslide.addEventListener("click", function () {
   changeslide(false);
 });
 //---------------------------------------------------------
-
-const protectionslides = document.querySelectorAll(".protectionimages");
-// const visibleslides = Array.from(protectionslides).slice(0, 6);
-// const hiddenSlides = Array.from(protectionslides).slice(6);
 const nextprotbutton = document.getElementById("next_product_protection");
 const prevprotbutton = document.getElementById("previous_product_protection");
 const nextseedbutton = document.getElementById("next_product_seeds");
 const prevseedbutton = document.getElementById("previous_product_seeds");
-let protimg = [
-  "protectionimage2.jpg",
-  "pesticidesimage.jpg",
-  "protectionimage2.jpg",
-  "pesticidesimage.jpg",
-  "protectionimage2.jpg",
-  "pesticidesimage.jpg",
-  "protectionimage2.jpg",
-  "pesticidesimage.jpg",
-  "protectionimage2.jpg",
-  "pesticidesimage.jpg",
-  "protectionimage2.jpg",
-  "pesticidesimage.jpg",
-];
-let lastslideindex = protectionslides.length - 1;
-nextprotbutton.addEventListener("click", () => {
-  let i = -6;
-  let imageindex = 6;
-  protectionslides[
-    lastslideindex - (i % 6)
-  ].style.backgroundImage = `url(${protimg[imageindex]})`;
-  i++;
-  imageindex++;
-});
+const protectionboxes = document.querySelectorAll(".protectionbox");
+const seedboxes = document.querySelectorAll(".seedbox");
 
-prevprotbutton.addEventListener("click", () => {});
+prevprotbutton.style.display = "none";
+prevseedbutton.style.display = "none";
+let counter = 0;
+nextprotbutton.addEventListener("click", () => {
+  if (counter < 6) {
+    prevprotbutton.style.display = "block";
+    protectionboxes.forEach((element) => {
+      element.style.transform += `translateX(-100%)`;
+    });
+    counter++;
+    console.log(counter);
+  }
+  if (counter == 6) {
+    nextprotbutton.style.display = "none";
+  }
+});
+prevprotbutton.addEventListener("click", () => {
+  if (counter > 0) {
+    nextprotbutton.style.display = "block";
+    protectionboxes.forEach((element) => {
+      element.style.transform += `translateX(100%)`;
+    });
+    counter--;
+    console.log(counter);
+  }
+  if (counter == 0) {
+    prevprotbutton.style.display = "none";
+  }
+});
+///////////////////////////////////////////////////////
+let counter2 = 0;
+
+nextseedbutton.addEventListener("click", () => {
+  if (counter2 < 6) {
+    prevseedbutton.style.display = "block";
+    seedboxes.forEach((element) => {
+      element.style.transform += `translateX(-100%)`;
+    });
+    counter2++;
+    console.log(counter);
+  }
+  if (counter2 == 6) {
+    nextseedbutton.style.display = "none";
+  }
+});
+prevseedbutton.addEventListener("click", () => {
+  if (counter2 > 0) {
+    nextseedbutton.style.display = "block";
+    seedboxes.forEach((element) => {
+      element.style.transform += `translateX(100%)`;
+    });
+    counter2--;
+    console.log(counter);
+  }
+  if (counter2 == 0) {
+    prevseedbutton.style.display = "none";
+  }
+});
+//////////////////////////////////////////////////
+protectionboxes.forEach((element) => {
+  element.addEventListener("mouseenter", () => {
+    element.style.transform = "";
+    element.classList.add("hover");
+  });
+  element.addEventListener("mouseleave", () => {
+    element.style.transform = "";
+    element.classList.remove("hover");
+  });
+});
