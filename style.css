@@ -14,8 +14,6 @@ body {
   padding: 1vh;
   padding-top: 0;
   padding-bottom: 0;
-
-  
 }
 .borer {
   border: 2px solid black;
@@ -150,32 +148,32 @@ a {
   align-items: center;
   font-weight: bold;
 }
-.space{
+.space {
   height: 200px;
 }
 .to-top {
   background: white;
   position: fixed;
   bottom: 16px;
-  left:32px;
-  width:50px;
-  height:50px;
+  left: 32px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size:32px;
-  color:#1f1f1f;
+  font-size: 32px;
+  color: #1f1f1f;
   text-decoration: none;
-  opacity:0;
+  opacity: 0;
   pointer-events: none;
-  transition: all .4s;
+  transition: all 0.4s;
 }
 
 .to-top.active {
-  bottom:32px;
+  bottom: 32px;
   pointer-events: auto;
-  opacity:1;
+  opacity: 1;
 }
 .box1 {
   display: flex;
@@ -222,7 +220,7 @@ a {
 }
 .bestseeds_section,
 .protection_section {
-  background-color: whitesmoke;
+  background-color: white;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -235,8 +233,9 @@ a {
 .protectionboxes {
   display: flex;
   justify-content: space-evenly;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   padding-top: 3vh;
+  align-items: center;
 }
 .seedbox,
 .protectionbox {
@@ -247,7 +246,26 @@ a {
   justify-content: space-between;
   margin-bottom: 1vh;
   border: 0.5px solid rgb(185, 179, 179);
+  border-radius: 10%;
+  transition: 0.5s;
 }
+.seedbox:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.protectionbox:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+/* #protectionbox_7,
+#protectionbox_8,
+#protectionbox_9,
+#protectionbox_10,
+#protectionbox_11,
+#protectionbox_12 {
+  display: none;
+}
+#seedbox_7, */
 .seedimages {
   background-size: contain;
   background-position: center;
