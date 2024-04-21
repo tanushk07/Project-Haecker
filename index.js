@@ -9,6 +9,10 @@ console.log(images);
 console.log(images.length);
 let index = 0;
 
+
+
+
+
 let banner = document.querySelector(".banner");
 // banner.style.backgroundImage = `url(${images[index]})`;
 function changeslide(bool) {
