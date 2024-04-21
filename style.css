@@ -166,9 +166,10 @@ a {
   display: flex;
   align-items: center;
   box-sizing: border-box;
-  background-image: url("Website-Banner-.png");
+  background-image: url("banner1.png");
   background-size: cover;
   justify-content: space-between;
+  transition: background-image 0.3s ease-in-out;
 }
 .change_banner {
   background-color: white;
