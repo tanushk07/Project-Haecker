@@ -13,7 +13,7 @@ select {
 .navbar {
   width: 100%;
   height: 20vh;
-  background-color:#9ADE7B;
+  background-color:lightgreen;
   display: flex;
   align-items: center;
   box-sizing: border-box;
