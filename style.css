@@ -1,7 +1,6 @@
-
 * {
   margin: 0px;
-  font-family: 'Poppins',sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
 }
 body {
@@ -13,7 +12,7 @@ select {
 .navbar {
   width: 100%;
   height: 20vh;
-  background-color:lightgreen;
+  background-color: lightgreen;
   display: flex;
   align-items: center;
   box-sizing: border-box;
@@ -71,7 +70,7 @@ select {
   height: 5vh;
   display: flex;
   align-items: center;
-  margin:1.5%;
+  margin: 1.5%;
 }
 #searchInput {
   width: 90%;
@@ -119,17 +118,16 @@ select {
 .fa-user:before {
   font-size: 28px;
 }
-.fa-shop::before{
+.fa-shop::before {
   font-size: 28px;
 }
-a{
+a {
   text-decoration: none;
   color: black;
 }
 .login {
   padding-top: 13.5px;
   padding-right: 1.25%;
-
 }
 /* .loginupper {
   display: flex;
@@ -157,32 +155,32 @@ a{
   align-items: center;
   padding-top: 11px;
 }
-.space{
+.space {
   height: 200px;
 }
 .to-top {
   background: white;
   position: fixed;
   bottom: 16px;
-  left:32px;
-  width:50px;
-  height:50px;
+  left: 32px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size:32px;
-  color:#1f1f1f;
+  font-size: 32px;
+  color: #1f1f1f;
   text-decoration: none;
-  opacity:0;
+  opacity: 0;
   pointer-events: none;
-  transition: all .4s;
+  transition: all 0.4s;
 }
 
 .to-top.active {
-  bottom:32px;
+  bottom: 32px;
   pointer-events: auto;
-  opacity:1;
+  opacity: 1;
 }
 .box1 {
   display: flex;
@@ -203,12 +201,12 @@ a{
   align-items: center;
   box-sizing: border-box;
   background-image: url("banner1s.png");
-  background-size:max(100vw,1400px);
+  background-size: max(100vw, 1400px);
   background-repeat: no-repeat;
   background-position: center;
   justify-content: space-between;
   transition: background-image 0.3s ease-in-out;
-  height:310px;
+  height: 310px;
 }
 .change_banner {
   background-color: white;
@@ -285,27 +283,27 @@ a{
   width: auto;
   font-weight: 600;
 }
-.currentlocation{
+.currentlocation {
   font-weight: 200;
 }
 
-@media screen and (max-width:820px){
-  .searchbar{
+@media screen and (max-width: 820px) {
+  .searchbar {
     width: 43vw;
   }
-  .kklogo{
+  .kklogo {
     height: 95px;
     width: 88px;
   }
-  .currentlocation{
+  .currentlocation {
     display: none;
   }
   .fa-magnifying-glass {
-    font-size: max(2.2vw,17px);
+    font-size: max(2.2vw, 17px);
     right: 8px;
     position: relative;
   }
-  .navbar{
+  .navbar {
     padding-bottom: 10px;
     padding-top: 0;
   }
@@ -313,67 +311,69 @@ a{
     padding-top: 18px;
     padding-right: 2%;
   }
-  .joinasseller{
+  .joinasseller {
     padding-left: 2.5px;
     padding-bottom: 13px;
   }
-  .sellertext{
+  .sellertext {
     display: none;
   }
-  .banner{
+  .banner {
     background-repeat: no-repeat;
-    background-size:max(100vw,900px);
+    background-size: max(100vw, 900px);
     height: 200px;
   }
-  .change_banner{
+  .change_banner {
     background-color: white;
     border: 0;
     position: relative;
     height: 7vh;
     width: 3vh;
   }
-  .seedbox, .protectionbox{
+  .seedbox,
+  .protectionbox {
     width: 20vw;
     height: 25vh;
   }
 }
-@media screen and (max-width:500px){
-  *{
+@media screen and (max-width: 500px) {
+  * {
     font-weight: 400;
   }
-  .searchbar{
+  .searchbar {
     width: 30vw;
   }
-  .kklogo{
+  .kklogo {
     height: 65px;
     width: 65px;
   }
-  .navbar{
+  .navbar {
     padding-bottom: 10px;
     padding-top: 0;
   }
   .fa-magnifying-glass {
-    font-size: max(2.8vw,12px);
+    font-size: max(2.8vw, 12px);
     right: 5px;
     position: relative;
   }
-  .joinasseller{
+  .joinasseller {
     padding-left: 2.5px;
     padding-bottom: 13px;
   }
-  .banner{
+  .banner {
     background-repeat: no-repeat;
-    background-size:max(100vw,650px);
+    background-size: max(100vw, 650px);
     height: 170px;
   }
-  .change_banner{
+  .change_banner {
     background-color: white;
     border: 0;
     position: relative;
     height: 5.5vh;
     width: 2.4vh;
   }
-  .seedbox, .protectionbox{
+  .seedbox,
+  .protectionbox {
     width: 25vw;
     height: 28vh;
   }
@@ -381,24 +381,25 @@ a{
     margin-right: 13px;
     font-size: 23px;
   }
-  .loclogo,.fa-location-dot {
+  .loclogo,
+  .fa-location-dot {
     font-size: 26px;
     margin: 0.4vh;
   }
   .fa-user:before {
     font-size: 23px;
   }
-  .fa-shop::before{
+  .fa-shop::before {
     font-size: 23px;
   }
-  .joinasseller{
+  .joinasseller {
     padding-left: 6px;
     padding-bottom: 18px;
   }
-  .seedstext{
+  .seedstext {
     font-size: 16px;
   }
-  .protectiontext{
+  .protectiontext {
     font-size: 16px;
   }
 }
