@@ -116,6 +116,12 @@ select {
   margin-right: 13px;
   font-size: 30px;
 }
+.fa-user:before {
+  font-size: 28px;
+}
+.fa-shop::before{
+  font-size: 28px;
+}
 a{
   text-decoration: none;
   color: black;
@@ -277,7 +283,7 @@ a{
 .sellertext {
   height: auto;
   width: auto;
-  font-weight: bolder;
+  font-weight: 600;
 }
 .currentlocation{
   font-weight: 200;
@@ -295,7 +301,9 @@ a{
     display: none;
   }
   .fa-magnifying-glass {
-    font-size: 2.2vw;
+    font-size: max(2.2vw,17px);
+    right: 8px;
+    position: relative;
   }
   .navbar{
     padding-bottom: 10px;
@@ -325,5 +333,65 @@ a{
   .seedbox, .protectionbox{
     width: 20vw;
     height: 25vh;
+  }
+}
+@media screen and (max-width:500px){
+  *{
+    font-weight: 400;
+  }
+  .searchbar{
+    width: 30vw;
+  }
+  .kklogo{
+    height: 65px;
+    width: 65px;
+  }
+  .navbar{
+    padding-bottom: 10px;
+    padding-top: 0;
+  }
+  .fa-magnifying-glass {
+    font-size: max(2.8vw,12px);
+    right: 5px;
+    position: relative;
+  }
+  .joinasseller{
+    padding-left: 2.5px;
+    padding-bottom: 13px;
+  }
+  .change_banner{
+    background-color: white;
+    border: 0;
+    position: relative;
+    height: 7vh;
+    width: 3vh;
+  }
+  .seedbox, .protectionbox{
+    width: 25vw;
+    height: 28vh;
+  }
+  .fa-cart-shopping {
+    margin-right: 13px;
+    font-size: 23px;
+  }
+  .loclogo,.fa-location-dot {
+    font-size: 26px;
+    margin: 0.4vh;
+  }
+  .fa-user:before {
+    font-size: 23px;
+  }
+  .fa-shop::before{
+    font-size: 23px;
+  }
+  .joinasseller{
+    padding-left: 6px;
+    padding-bottom: 18px;
+  }
+  .seedstext{
+    font-size: 16px;
+  }
+  .protectiontext{
+    font-size: 16px;
   }
 }
