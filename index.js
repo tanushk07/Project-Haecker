@@ -1,9 +1,9 @@
 "use strict";
 //---------------------------------------------------------------
 let images = [];
-images.push("banner1.png");
-images.push("banner2.jpg");
-images.push("banner3.jpg");
+images.push("banner1s.png");
+images.push("banner2s.jpg");
+images.push("banner3s.jpg");
 console.log(images);
 
 console.log(images.length);
