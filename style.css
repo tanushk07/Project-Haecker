@@ -99,6 +99,7 @@ body {
 .cart {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 .cartlogo {
   height: 4vh;
@@ -119,6 +120,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   justify-content: space-evenly;
 }
 .loginupper {
@@ -144,6 +146,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  justify-content: center;
   padding: 0.4vh;
   align-items: center;
   font-weight: bold;
