@@ -203,7 +203,7 @@ a{
   align-items: center;
   box-sizing: border-box;
   background-image: url("banner1s.png");
-  background-size:max(100vw,1000px);
+  background-size:max(100vw,1400px);
   background-repeat: no-repeat;
   background-position: center;
   justify-content: space-between;
@@ -322,6 +322,8 @@ a{
   }
   .banner{
     background-repeat: no-repeat;
+    background-size:max(100vw,900px);
+    height: 200px;
   }
   .change_banner{
     background-color: white;
@@ -359,12 +361,17 @@ a{
     padding-left: 2.5px;
     padding-bottom: 13px;
   }
+  .banner{
+    background-repeat: no-repeat;
+    background-size:max(100vw,650px);
+    height: 170px;
+  }
   .change_banner{
     background-color: white;
     border: 0;
     position: relative;
-    height: 7vh;
-    width: 3vh;
+    height: 5.5vh;
+    width: 2.4vh;
   }
   .seedbox, .protectionbox{
     width: 25vw;
