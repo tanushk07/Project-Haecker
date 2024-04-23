@@ -5,21 +5,59 @@
     <meta name="viewport" content="width=, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      .b {
+      *{
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      .logincard {
+        border: 1px solid;
+        width: 350px;
+        height: 420px;
+        margin: auto;
+        border-radius: 50px;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: #E6E6FA	;
+        box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.1);
+
+        }
+      .inp{
+        width: 17vw;
+        border-radius: 50px;
+        height: 6vh;
+        text-indent: 15px;
+      }
+      .submitbtn{
+        
+        border: none;
+        height: 4vh;
       }
     </style>
   </head>
   <body>
     <form class="b" action="/" method="post">
-      <input type="text" name="name" placeholder="Enter name or Email-ID" />
-      <input type="password" name="pswd" placeholder="Set password" />
-      <input type="text" name="phone" placeholder="Enter phone number" />
-      <input type="text" name="aadharcard" placeholder="Enter aadhar number" />
+      <div class="logincard">
+        <p><h2>REGISTER</h2></p>
+        <input type="text" name="name" class="inp Username" placeholder="Enter name or Email-ID" />
+        <input type="password" class="inp passwd" name="pswd" placeholder="Set password" />
+        <input type="text" class="inp phone" name="phone" placeholder="Enter phone number" />
+        <input
+          type="text"
+          name="aadharcard" class="inp aadhar"
+          placeholder="Enter aadhar number"
+        />
 
-      <button type="submit">Click kar kisan ladle</button>
+        <button type="submit" class="submitbtn">Register</button>
+      </div>
     </form>
   </body>
 </html>
