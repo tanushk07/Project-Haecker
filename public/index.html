@@ -4,10 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <style>
       *{
         box-sizing: border-box;
         font-family: sans-serif;
+        margin: 0;
       }
       body {
         display: flex;
@@ -17,46 +19,122 @@
       }
       .logincard {
         border: 1px solid;
-        width: 350px;
-        height: 420px;
-        margin: auto;
-        border-radius: 50px;
+        width: 80vw;
+        height: 90vh;
+        display: flex;
+        font-weight:bold;
+        }
+      .topdiv{
+          border-bottom: 1px solid black; 
+          margin-left: 3vw;
+          font-weight: 100;
+      }
+      .right{
+        
+        width: 50vw;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         justify-content: space-evenly;
-        background-color: #E6E6FA	;
-        box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.1);
-
-        }
-      .inp{
-        width: 17vw;
-        border-radius: 50px;
+        align-items: center;
+      }
+      .left{
+        
+        width: 30vw;
+        background-color: lightgreen;
+      }
+      .boxesdiv{
+        
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 3vw;
+        margin-top: 4vh;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 2vw;
+      }
+      .inp,.roleselect{
+        width: 20vw;
         height: 6vh;
         text-indent: 15px;
+        margin-bottom: 2vh;
       }
       .submitbtn{
         
         border: none;
-        height: 4vh;
+        height: 6vh;
+        width: 40vw;
+        border-radius: 3vw;
+        font-size: larger;
+        font-weight: bold;
+      }
+      .containers{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 12vh;
+      }
+      .gender{
+        
+        display: flex;
+        flex-direction: column;
+        height: 8vh;
+        justify-content: space-between;
+        padding-bottom: 1vh;
+        width: 50vw;
+        
+      }
+      .genderoptions{
+        display: flex;
+        
+        margin-left: 3vw;
+        justify-content: space-between;
+        padding-right: 20%;
+      }
+      .Gender_text{
+        margin-left: 3vw;
+      }
+      .gender_checkboxes{
+        border-radius: 50%;
+      }
+      .genders{
+        border-radius: 50%;
       }
     </style>
   </head>
   <body>
     <form class="b" action="/" method="post">
       <div class="logincard">
-        <p><h2>REGISTER</h2></p>
-        <input type="text" name="name" class="inp Username" placeholder="Enter name or Email-ID" />
-        <input type="password" class="inp passwd" name="pswd" placeholder="Set password" />
-        <input type="text" class="inp phone" name="phone" placeholder="Enter phone number" />
-        <input
-          type="text"
-          name="aadharcard" class="inp aadhar"
-          placeholder="Enter aadhar number"
-        />
-
-        <button type="submit" class="submitbtn">Register</button>
+        <div class="left"></div>
+        <div class="right">
+          <div class="topdiv">
+          <h1>Register Here</h1>
+        </div>
+        <div class="boxesdiv">
+          <div class="containers"><div class="name_text t">Full name</div><div class="namebox"><input type="text" name="name" class="inp Username" placeholder="name" /></div></div>
+          <div class="containers"><div class="email_text t">Email</div><div class="emailbox">
+            <input type="text" name="Email" class="inp email" placeholder=" Email-ID" />
+          </div></div>
+          <div class="containers"><div class="country_text t">Country</div><div class="countrybox"><input type="text" name="country" class="inp country" placeholder="Country" /></div></div>
+          <div class="containers"><div class="password_text t">Password</div><div class="passwordbox"><input type="password" class="inp passwd" name="pswd" placeholder=" password" /></div></div>
+          <div class="containers"><div class="role_text t">Role</div><div class="rolebox">
+            <!-- <button name="Role" class="inp role"> --Please Select--<i class="fa-solid fa-v"></i></button> -->
+            <select name="roleselect" class="roleselect" ><option selected disabled>--SELECT YOUR ROLE--</option><option value="AsUser">As a User</option>
+            <option value="AsSeller">As a Seller</option></select>
+          </div></div>
+          <div class="containers"><div class="phoneno_text t">Phone Number</div><div class="phonenobox"><input type="text" class="inp phone" name="phone" placeholder="Phone number" /></div></div>
+          <div class="containers"><div class="city_text t">City</div><div class="citybox">
+            <input type="text" class="inp city" name="city" placeholder="City" />
+          </div></div>
+          <div class="containers"><div class="confirm_password_text  t">Confirm Password</div><div class="confirm_passwordbox"><input type="text" class="inp confpasswd" name="confpswd" placeholder="confirm password" /></div></div></div>
+          <div class="gender">
+            <div class="Gender_text">Gender</div>
+            <div class="genderoptions"><div class="genders"><input type="checkbox" name="male" class="gender_checkboxes">Male</div>
+            <div class="genders"><input type="checkbox" name="female" class="gender_checkboxes">Female</div>
+            <div class="genders"><input type="checkbox" name="other" class="gender_checkboxes">Others</div>
+            <div class="genders"><input type="checkbox" name="not_to_say" class="gender_checkboxes">Rather Not To Say</div></div>
+          </div>
+          <button type="submit" class="submitbtn">Register</button></div>
+        </div>
       </div>
     </form>
   </body>

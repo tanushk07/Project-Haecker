@@ -14,9 +14,15 @@ const UserSchema = new Schema({
     type: String,
     required: true,
   },
-  aadharcard: {
+  Email: {
     type: String,
     required: true,
+  },
+  country: {
+    type: String,
+  },
+  city: {
+    type: String,
   },
 });
 

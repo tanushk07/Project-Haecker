@@ -20,8 +20,8 @@ app.set("view engine", "hbs");
 app.post("/", async (req, res) => {
   /*let name = req.body.name;*/
 
-  const { pswd, name, phone, aadharcard } = req.body;
-  let ar = [name, pswd, phone, aadharcard];
+  const { pswd, name, phone, Email, city, country } = req.body;
+  let ar = [name, pswd, phone, Email, city, country];
   /*res.send(pswd);*/
   res.render("index", { data: ar });
 
@@ -29,7 +29,9 @@ app.post("/", async (req, res) => {
     name,
     pswd,
     phone,
-    aadharcard,
+    Email,
+    city,
+    country,
   });
   let u = await users.find({});
   console.log(u);
