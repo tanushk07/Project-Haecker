@@ -7,13 +7,10 @@ const hbs = require("hbs");
 const users = require("./models/kisan");
 const mongoose = require("mongoose");
 
-const userRouter = require('./routes/user')
-const adminRouter = require('./routes/admin')
-app.use('/user',userRouter)
-app.use('/admin',adminRouter)
-
-
-
+const userRouter = require("./routes/user");
+const adminRouter = require("./routes/admin");
+app.use("/user", userRouter);
+app.use("/admin", adminRouter);
 
 app.use(express.static(path.join(__dirname, "public")));
 app.use(express.urlencoded({ extended: true }));
@@ -28,17 +25,15 @@ app.set("view engine", "hbs");
 app.post("/", async (req, res) => {
   /*let name = req.body.name;*/
 
-  const { pswd, name, phone, Email, city, country,u,a } = req.body;
-  let ar = [name, pswd, phone, Email, city, country];
+  const { pswd, name, phone, Email, city, country, role } = req.body;
+  let ar = [name, pswd, phone, Email, city, country, role];
   /*res.send(pswd);*/
-  /*res.render("index", { data: ar });*/
-  if(u){
-    console.log("Registered as a user")
-
-  }
-  else if(a){
-    console.log('Registered as an admin')
-  }
+  // res.render("index", { data: ar });
+  // if (u) {
+  //   console.log("Registered as a user");
+  // } else if (a) {
+  //   console.log("Registered as an admin");
+  // }
 
   await users.create({
     name,
@@ -47,6 +42,7 @@ app.post("/", async (req, res) => {
     Email,
     city,
     country,
+    role,
   });
   let f = await users.find({});
   console.log(f);

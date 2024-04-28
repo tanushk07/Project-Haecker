@@ -24,6 +24,10 @@ const UserSchema = new Schema({
   city: {
     type: String,
   },
+  role: {
+    type: String,
+    enum: ["user", "admin"],
+  },
 });
 
 module.exports = mongoose.model("users", UserSchema); //creating the model of users with schema
