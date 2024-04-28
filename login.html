@@ -19,21 +19,21 @@
   </head>
   <body>
     <div class="login-page">
-      <form action="">
+      <form action="/login" method="post">
         <h1>Login</h1>
         <div class="input-box">
-          <input type="text" placeholder="Username" required />
+          <input type="text" name="email" placeholder="Email" required />
           <i class="bx bxs-user"></i>
         </div>
         <div class="input-box eye">
           <input
             type="password"
             placeholder="Password"
+            name="password"
             id="password"
             required
           />
           <i class="fa-solid fa-eye-slash" id="eyeicon"></i>
-          <i class="bx bxs-lock-alt"></i>
         </div>
         <div class="remember-forgot">
           <label><input type="checkbox" />Remember Me</label>
@@ -48,14 +48,16 @@
     <script>
       let eyeicon = document.getElementById("eyeicon");
       let password = document.getElementById("password");
-      eyeicon.onclick = function () {
+      eyeicon.addEventListener("click", () => {
+        console.log("clicked");
         if (password.type == "password") {
           password.type = "text";
-          eyeicon.class = "fa-solid fa-eye";
+          eyeicon.classList = "fa-solid fa-eye";
         } else {
           password.type = "password";
+          eyeicon.classList = "fa-solid fa-eye-slash";
         }
-      };
+      });
     </script>
   </body>
 </html>
